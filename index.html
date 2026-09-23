@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HEMAVATHY S | Computer Science Graduate & AI/ML Developer</title>
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Decorative Canvas & Gradients -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-grid-pattern"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-text">Hemavathy<span class="dot">.</span> S</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Internship</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-right-actions">
+        <!-- Day / Night Theme Switcher -->
+        <button class="theme-toggle-btn" id="themeToggle" title="Toggle Day/Night Theme">
+          <i class="fas fa-moon moon-icon"></i>
+          <i class="fas fa-sun sun-icon"></i>
+        </button>
+
+        <a href="mailto:hemavathysivakumar865@gmail.com" class="nav-action-btn"><i class="fas fa-envelope"></i> Gmail</a>
+        <a href="https://linkedin.com/in/hema-ctrl" target="_blank" rel="noopener noreferrer" class="nav-action-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/hema-ctrl" target="_blank" rel="noopener noreferrer" class="nav-action-btn"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <!-- Left Column Content -->
+      <div class="hero-content">
+        <div class="status-pill">
+          <span class="status-pulse"></span>
+          <span>Open to AI/ML, Web Dev & UI/UX Roles | 2026 Batch</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">HEMAVATHY S</span>
+        </h1>
+        
+        <div class="hero-role-title">
+          Computer Science Graduate | AI/ML & Web Development
+        </div>
+        
+        <p class="hero-bio">
+          Motivated Computer Science graduate with hands-on experience in AI/ML model development, full-stack web engineering (React, Node.js, Tailwind), and user-centered UI/UX design. Passionate about building intelligent, data-driven, and intuitive digital applications.
+        </p>
+        
+        <!-- Contact Quick Pills with Copy-to-Clipboard -->
+        <div class="contact-pill-group">
+          <div class="contact-pill-item">
+            <i class="fas fa-location-dot" style="color: #ef4444;"></i>
+            <span>Chennai, India</span>
+          </div>
+          <div class="contact-pill-item copy-trigger" data-copy="hemavathysivakumar865@gmail.com" title="Click to copy Gmail">
+            <i class="fas fa-envelope" style="color: #38bdf8;"></i>
+            <span>hemavathysivakumar865@gmail.com</span>
+          </div>
+          <div class="contact-pill-item copy-trigger" data-copy="+918122788732" title="Click to copy phone">
+            <i class="fas fa-phone" style="color: #ec4899;"></i>
+            <span>+91 8122788732</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary-cyan">
+            <i class="fas fa-diagram-project"></i> Explore Projects
+          </a>
+          <a href="https://linkedin.com/in/hema-ctrl" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark">
+            <i class="fab fa-linkedin"></i> Connect on LinkedIn
+          </a>
+          <button class="btn btn-outline-dark" id="hero-ai-btn">
+            <i class="fas fa-robot"></i> Ask AI Assistant
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Column Hero Preview Card -->
+      <div class="hero-visual">
+        <div class="hero-preview-card">
+          <div class="card-header-bar">
+            <div class="window-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="window-title">hemavathy_profile.overview</div>
+            <span class="badge-mini">HIGHLIGHTS</span>
+          </div>
+
+          <div class="card-body-content">
+            <!-- Candidate Profile Identity Card -->
+            <div class="hero-profile-header">
+              <div class="hero-avatar-wrapper" id="profile-photo-trigger" title="Click to expand photo preview">
+                <img src="assets/profile.jpg" onerror="this.onerror=null; this.src='profile.jpg'" alt="HEMAVATHY S" class="hero-avatar-img">
+                <span class="avatar-status-dot" title="Available for opportunities"></span>
+              </div>
+              <div class="hero-profile-info">
+                <div class="profile-name-row">
+                  <h3 class="profile-name">HEMAVATHY S</h3>
+                  <span class="profile-verify-badge" title="Verified Computer Science Graduate"><i class="fas fa-circle-check"></i></span>
+                </div>
+                <span class="profile-role">AI/ML & Web Development</span>
+                <div class="profile-location"><i class="fas fa-location-dot"></i> Chennai, India</div>
+              </div>
+            </div>
+
+            <!-- Key Competencies & Highlights Showcase Box -->
+            <div class="highlights-box">
+              <div class="highlight-line">
+                <i class="fas fa-graduation-cap highlight-icon"></i>
+                <div>
+                  <strong>B.Sc. Computer Science</strong>
+                  <span class="highlight-sub">Asan Memorial College of arts & science (75%)</span>
+                </div>
+              </div>
+
+              <div class="highlight-line">
+                <i class="fas fa-brain highlight-icon"></i>
+                <div>
+                  <strong>AI & ML Development</strong>
+                  <span class="highlight-sub">Python, NLP, Model Training (GradTwin Intern)</span>
+                </div>
+              </div>
+
+              <div class="highlight-line">
+                <i class="fas fa-laptop-code highlight-icon"></i>
+                <div>
+                  <strong>Full-Stack & UI/UX</strong>
+                  <span class="highlight-sub">React.js, Node.js, MongoDB, Figma (Vhir IT Intern)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mini Highlight Counters -->
+            <div class="hero-stats-grid">
+              <div class="stat-mini-card">
+                <span class="stat-num">75%</span>
+                <span class="stat-lbl">B.Sc. CS Aggregate</span>
+              </div>
+              <div class="stat-mini-card">
+                <span class="stat-num">2+</span>
+                <span class="stat-lbl">Flagship Projects</span>
+              </div>
+              <div class="stat-mini-card">
+                <span class="stat-num">2</span>
+                <span class="stat-lbl">Internships Completed</span>
+              </div>
+              <div class="stat-mini-card">
+                <span class="stat-num">2026</span>
+                <span class="stat-lbl">Graduation Batch</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Full Preview Modal Popup -->
+  <div class="photo-modal-backdrop" id="photo-modal">
+    <div class="photo-modal-content">
+      <button class="photo-modal-close" id="modal-close-btn">&times;</button>
+      <img src="assets/profile.jpg" onerror="this.onerror=null; this.src='profile.jpg'" alt="HEMAVATHY S" class="photo-modal-img">
+      <h3 style="font-weight: 800; font-size: 1.3rem;">HEMAVATHY S ✔️</h3>
+      <p style="color: var(--accent-cyan); font-size: 0.95rem; margin-top: 0.3rem;">Computer Science Graduate | AI/ML & Web Development</p>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">EXECUTIVE PROFILE</span>
+        <h2 class="section-title">Turning Ideas Into Intelligent Digital Solutions</h2>
+      </div>
+
+      <div class="glass-panel" style="padding: 2.8rem; max-width: 950px; margin: 0 auto; display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 280px;">
+          <p style="font-size: 1.08rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.2rem;">
+            I am a <strong>Computer Science graduate (B.Sc Computer Science)</strong> from Asan Memorial College of Arts & Science, Chennai, specialized in AI/ML model training, web development, and user-centered UI/UX design.
+          </p>
+          <p style="font-size: 1.08rem; line-height: 1.8; color: var(--text-secondary);">
+            Through internships at <strong>GradTwin</strong> (AI/ML) and <strong>Vhir IT Solutions</strong> (UI/UX), I have built ML educational assistants and full-stack web platforms connecting clients with services.
+          </p>
+        </div>
+
+        <div class="author-quote-box">
+          <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
+            <img src="assets/profile.jpg" onerror="this.onerror=null; this.src='profile.jpg'" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-cyan);" alt="Hemavathy">
+            <div>
+              <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary);">HEMAVATHY S</h4>
+              <span style="font-size: 0.78rem; color: var(--accent-cyan);">Chennai, India</span>
+            </div>
+          </div>
+          <p class="author-quote-text">
+            "Passionate about continuous learning, clean architecture, and user-friendly software design."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">TECHNICAL SKILLS</span>
+        <h2 class="section-title">Capabilities & Tools</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="glass-panel skill-card">
+          <div class="skill-card-title"><i class="fas fa-code"></i> Languages</div>
+          <div class="badge-container">
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">Java</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">HTML</span>
+            <span class="skill-badge">CSS</span>
+          </div>
+        </div>
+
+        <div class="glass-panel skill-card">
+          <div class="skill-card-title"><i class="fas fa-laptop-code"></i> Frontend & Design</div>
+          <div class="badge-container">
+            <span class="skill-badge">React.js</span>
+            <span class="skill-badge">Tailwind CSS</span>
+            <span class="skill-badge">Bootstrap</span>
+            <span class="skill-badge">Figma</span>
+            <span class="skill-badge">basic Adobe XD</span>
+          </div>
+        </div>
+
+        <div class="glass-panel skill-card">
+          <div class="skill-card-title"><i class="fas fa-database"></i> Backend & Databases</div>
+          <div class="badge-container">
+            <span class="skill-badge">Node.js</span>
+            <span class="skill-badge">Express.js</span>
+            <span class="skill-badge">MongoDB</span>
+          </div>
+        </div>
+
+        <div class="glass-panel skill-card">
+          <div class="skill-card-title"><i class="fas fa-tools"></i> Tools & Platforms</div>
+          <div class="badge-container">
+            <span class="skill-badge">Google Colab</span>
+            <span class="skill-badge">Git</span>
+            <span class="skill-badge">GitHub</span>
+            <span class="skill-badge">Postman</span>
+            <span class="skill-badge">VS Code</span>
+            <span class="skill-badge">Antigravity</span>
+          </div>
+        </div>
+
+        <div class="glass-panel skill-card" style="grid-column: span 2;">
+          <div class="skill-card-title"><i class="fas fa-star"></i> Core Strengths</div>
+          <div class="badge-container">
+            <span class="skill-badge">Team Collaboration</span>
+            <span class="skill-badge">Adaptability</span>
+            <span class="skill-badge">Observation</span>
+            <span class="skill-badge">Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">RELEVANT PROJECTS</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <div class="glass-panel project-card">
+          <div>
+            <div class="project-header">
+              <h3 class="project-title">EDUTUTOR AI</h3>
+              <a href="https://github.com/hema-ctrl/EduTutor_AI" target="_blank" rel="noopener noreferrer" class="project-link" title="Open GitHub Repo"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="project-desc">
+              Developed an AI-powered educational assistant using Machine Learning and Natural Language Processing (NLP) to provide personalized learning support and instant responses to academic queries, improving student engagement and learning experience.
+            </p>
+          </div>
+          <div class="badge-container" style="margin-bottom: 1.2rem;">
+            <span class="skill-badge">Machine Learning</span>
+            <span class="skill-badge">NLP</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">AI</span>
+          </div>
+          <a href="https://github.com/hema-ctrl/EduTutor_AI" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark" style="justify-content: center; width: 100%;">
+            <i class="fab fa-github"></i> View Project Code
+          </a>
+        </div>
+
+        <div class="glass-panel project-card">
+          <div>
+            <div class="project-header">
+              <h3 class="project-title">SMART SERVICE BOOKING PORTAL</h3>
+              <a href="https://github.com/hema-ctrl/service-booking" target="_blank" rel="noopener noreferrer" class="project-link" title="Open GitHub Repo"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="project-desc">
+              Developed a full-stack web platform using React.js, Tailwind CSS, Node.js, Express.js, and MongoDB to connect customers with service providers. Implemented user authentication, service listings, booking management, provider registration, and admin approval to streamline service discovery and booking.
+            </p>
+          </div>
+          <div class="badge-container" style="margin-bottom: 1.2rem;">
+            <span class="skill-badge">React.js</span>
+            <span class="skill-badge">Tailwind CSS</span>
+            <span class="skill-badge">Node.js</span>
+            <span class="skill-badge">Express.js</span>
+            <span class="skill-badge">MongoDB</span>
+          </div>
+          <a href="https://github.com/hema-ctrl/service-booking" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark" style="justify-content: center; width: 100%;">
+            <i class="fab fa-github"></i> View Project Code
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internship Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">INTERNSHIP EXPERIENCE</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="glass-panel timeline-item">
+          <h3 class="timeline-role">UI/UX Designer Intern</h3>
+          <div class="timeline-company">Vhir IT Solitions</div>
+          <div class="timeline-period"><i class="fas fa-calendar-alt"></i> May 2025 - June 2025</div>
+          <p style="color: var(--text-secondary);">
+            Completed an internship at Vhir IT Solutions, where I designed responsive website layouts using Figma and created user-friendly UI components to improve website design and user experience.
+          </p>
+        </div>
+
+        <div class="glass-panel timeline-item">
+          <h3 class="timeline-role">AI & ML Intern</h3>
+          <div class="timeline-company">GradTwin</div>
+          <div class="timeline-period"><i class="fas fa-calendar-alt"></i> June 2026 - Aug 2026</div>
+          <p style="color: var(--text-secondary);">
+            Completed hands-on training in Python, Machine Learning, data preprocessing, feature selection, model training, and model evaluation, with practical experience in developing and comparing ML models.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certifications Section -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">EDUCATION & CERTIFICATIONS</span>
+        <h2 class="section-title">Academic Details</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="glass-panel skill-card">
+          <div class="skill-card-title"><i class="fas fa-graduation-cap"></i> Degree</div>
+          <h4 style="font-size: 1.15rem; margin-bottom: 0.3rem;">Bachelor of Science (B. Sc), Computer Science</h4>
+          <p style="color: var(--accent-cyan); font-weight: 600;">Asan Memorial College of arts & science</p>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">2023 - 2026 | Aggregate: 75%</p>
+        </div>
+
+        <div class="glass-panel skill-card">
+          <div class="skill-card-title"><i class="fas fa-school"></i> HSC</div>
+          <h4 style="font-size: 1.15rem; margin-bottom: 0.3rem;">Higher Secondary Education</h4>
+          <p style="color: var(--accent-cyan); font-weight: 600;">C.S.I. Corley Higher Secondary School, Tambaram</p>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;">2022 - 2023 | Percentage: 68%</p>
+        </div>
+
+        <div class="glass-panel skill-card" id="certifications" style="grid-column: span 2;">
+          <div class="skill-card-title"><i class="fas fa-certificate"></i> CERTIFICATIONS</div>
+          <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.5rem;">
+            <div>📜 <strong>Internship Certification - Website Design at Vhir IT Solutions.</strong></div>
+            <div>📜 <strong>Naan Mudhalvan Program Certification - EDUTUTOR AI Project.</strong></div>
+            <div>📜 <strong>UG Diploma Certification - Python Program & Data Analysis.</strong></div>
+            <div>📜 <strong>Basic IT Course</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">CONTACT</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+
+      <div class="glass-panel" style="padding: 3rem; max-width: 800px; margin: 0 auto; text-align: center;">
+        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem;">
+          Seeking an entry-level opportunity to contribute and grow in a dynamic organization. Feel free to connect directly via LinkedIn, GitHub, or Gmail!
+        </p>
+        
+        <div style="display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap; margin-bottom: 2rem;">
+          <a href="https://linkedin.com/in/hema-ctrl" target="_blank" rel="noopener noreferrer" class="btn btn-primary-cyan">
+            <i class="fab fa-linkedin"></i> LinkedIn Profile
+          </a>
+          <a href="https://github.com/hema-ctrl" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark">
+            <i class="fab fa-github"></i> GitHub Profile
+          </a>
+          <a href="mailto:hemavathysivakumar865@gmail.com" class="btn btn-outline-dark">
+            <i class="fas fa-envelope"></i> Send Gmail
+          </a>
+          <a href="tel:+918122788732" class="btn btn-outline-dark">
+            <i class="fas fa-phone-alt"></i> +91 8122788732
+          </a>
+        </div>
+
+        <div style="color: var(--text-secondary); font-size: 0.95rem;">
+          📍 Location: <strong>Chennai, India</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating AI Assistant Button -->
+  <button class="bot-toggle-btn" id="bot-toggle-btn" title="Open AI Chatbot">
+    <i class="fas fa-robot"></i>
+    <span class="bot-unread-badge" id="bot-badge">1</span>
+  </button>
+
+  <!-- Floating AI Widget Window -->
+  <div class="glass-panel bot-widget" id="bot-widget">
+    <div class="chat-header">
+      <div class="chat-bot-info">
+        <div class="bot-avatar"><i class="fas fa-robot"></i></div>
+        <div>
+          <h4 class="chat-bot-title">Hema AI Assistant</h4>
+          <span class="chat-bot-status"><i class="fas fa-circle"></i> Online • Verified Resume Bot</span>
+        </div>
+      </div>
+      <button id="bot-close-btn" class="chat-close-btn" title="Close Chat">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="chat-messages" id="floating-chat-messages">
+      <div class="chat-bubble bot-bubble">
+        Hello! 👋 I am <strong>Hemavathy's AI Assistant</strong>.<br><br>
+        Ask me anything about her technical skills, AI/ML background, full-stack projects, or contact details!
+      </div>
+    </div>
+
+    <!-- Quick Chips Suggestions -->
+    <div class="quick-chips-wrapper">
+      <span class="quick-chips-title">Quick Suggestions:</span>
+      <div class="quick-chips">
+        <button class="chip" data-query="Who is Hemavathy?">👤 Intro</button>
+        <button class="chip" data-query="What are her technical skills?">💡 Skills</button>
+        <button class="chip" data-query="Show her engineering projects">🚀 Projects</button>
+        <button class="chip" data-query="What is her work experience?">💼 Experience</button>
+        <button class="chip" data-query="How can I contact her?">📬 Contact</button>
+      </div>
+    </div>
+
+    <div class="chat-input-row">
+      <input type="text" id="floating-chat-input" class="chat-input" placeholder="Type a message..." autocomplete="off">
+      <button class="chat-send-btn" id="floating-chat-send" title="Send Message">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Notification Popup for Clipboard -->
+  <div class="toast-notification" id="toast">Copied to clipboard!</div>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 HEMAVATHY S. Built with passion & AI.</p>
+    </div>
+  </footer>
+
+  <script src="resumeData.js"></script>
+  <script src="chatbot.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Day / Night Theme Toggle Handler
+      const themeToggle = document.getElementById('themeToggle');
+      if (themeToggle) {
+        // Load saved theme or default to dark
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+          const currentTheme = document.documentElement.getAttribute('data-theme');
+          const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', newTheme);
+          localStorage.setItem('theme', newTheme);
+        });
+      }
+
+      // Copy to Clipboard & Toast
+      const copyTriggers = document.querySelectorAll('.copy-trigger');
+      const toast = document.getElementById('toast');
+
+      copyTriggers.forEach(el => {
+        el.addEventListener('click', () => {
+          const textToCopy = el.getAttribute('data-copy');
+          if (textToCopy) {
+            navigator.clipboard.writeText(textToCopy);
+            if (toast) {
+              toast.textContent = `Copied "${textToCopy}" to clipboard!`;
+              toast.classList.add('show');
+              setTimeout(() => toast.classList.remove('show'), 2500);
+            }
+          }
+        });
+      });
+    });
+
+    // Photo Modal Interactivity
+    const photoTrigger = document.getElementById('profile-photo-trigger');
+    const photoModal = document.getElementById('photo-modal');
+    const modalCloseBtn = document.getElementById('modal-close-btn');
+
+    if (photoTrigger && photoModal) {
+      photoTrigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        photoModal.classList.add('active');
+      });
+    }
+
+    if (modalCloseBtn && photoModal) {
+      modalCloseBtn.addEventListener('click', () => {
+        photoModal.classList.remove('active');
+      });
+    }
+
+    if (photoModal) {
+      photoModal.addEventListener('click', (e) => {
+        if (e.target === photoModal) {
+          photoModal.classList.remove('active');
+        }
+      });
+    }
+
+    // AI Assistant Buttons Trigger Floating Overlay
+    const botWidget = document.getElementById('bot-widget');
+    const aiTriggers = ['hero-ai-btn', 'card-ai-btn'];
+
+    aiTriggers.forEach(id => {
+      const btn = document.getElementById(id);
+      if (btn && botWidget) {
+        btn.addEventListener('click', () => {
+          botWidget.classList.add('active');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
